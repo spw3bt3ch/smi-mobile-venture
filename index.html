@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SMI Ventures – Your trusted destination for premium smartphones, chargers, earphones, power banks, phone cases, screen guards, and smart gadgets at unbeatable prices." />
+  <title>SMI Ventures | Smartphones & Accessories</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Remix Icons (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <i class="ri-smartphone-line logo-icon"></i>
+        <span>SMI<span class="logo-accent"> Ventures</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#accessories" class="nav-link">Accessories</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CTA + Menu Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-container">
+      <!-- Hero Text -->
+      <div class="hero-content" data-animate="fade-up">
+        <div class="hero-badge">
+          <i class="ri-flashlight-fill"></i>
+          <span>New Arrivals Just Dropped</span>
+        </div>
+        <h1 class="hero-title">
+          Latest <span class="gradient-text">Smartphones</span><br />
+          &amp; Accessories
+        </h1>
+        <p class="hero-tagline">
+          Explore cutting-edge smartphones, premium accessories, and smart gadgets — all at prices that don't break the bank. Trusted by thousands across the region.
+        </p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary btn-lg">
+            Shop Now <i class="ri-arrow-right-line"></i>
+          </a>
+          <a href="#about" class="btn btn-outline btn-lg">
+            Learn More
+          </a>
+        </div>
+        <!-- Stats Row -->
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>5,000+</strong>
+            <span>Happy Customers</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>200+</strong>
+            <span>Products</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>5★</strong>
+            <span>Avg Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hero-visual" data-animate="fade-left">
+        <div class="hero-phone-mockup">
+          <div class="phone-glow"></div>
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-app-grid">
+                <div class="app-dot" style="background:#3b82f6"></div>
+                <div class="app-dot" style="background:#06b6d4"></div>
+                <div class="app-dot" style="background:#8b5cf6"></div>
+                <div class="app-dot" style="background:#10b981"></div>
+                <div class="app-dot" style="background:#f59e0b"></div>
+                <div class="app-dot" style="background:#ef4444"></div>
+                <div class="app-dot" style="background:#ec4899"></div>
+                <div class="app-dot" style="background:#14b8a6"></div>
+                <div class="app-dot" style="background:#f97316"></div>
+              </div>
+              <div class="phone-bar"></div>
+              <div class="phone-bar short"></div>
+            </div>
+          </div>
+          <!-- Floating badges -->
+          <div class="float-badge badge-top">
+            <i class="ri-shield-check-fill" style="color:#10b981"></i>
+            <span>Warranty</span>
+          </div>
+          <div class="float-badge badge-bottom">
+            <i class="ri-truck-fill" style="color:#3b82f6"></i>
+            <span>Fast Delivery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#products" class="scroll-indicator">
+      <i class="ri-arrow-down-s-line"></i>
+    </a>
+  </section>
+
+  <!-- ===== FEATURED PRODUCTS ===== -->
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Our Products</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Products</span></h2>
+        <p class="section-subtitle">Explore our curated selection of top-rated smartphones and accessories, sourced from leading global brands.</p>
+      </div>
+
+      <!-- Product Filter Tabs -->
+      <div class="filter-tabs" data-animate="fade-up">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="phone">Phones</button>
+        <button class="filter-tab" data-filter="power">Power Banks</button>
+        <button class="filter-tab" data-filter="audio">Audio</button>
+        <button class="filter-tab" data-filter="charge">Chargers</button>
+        <button class="filter-tab" data-filter="case">Cases</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Product 1: Smartphone -->
+        <div class="product-card" data-category="phone" data-animate="fade-up">
+          <div class="product-badge">Best Seller</div>
+          <div class="product-image">
+            <i class="ri-smartphone-fill product-icon" style="color:#3b82f6"></i>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Smartphone</span>
+            <h3 class="product-name">ProMax X15 Ultra</h3>
+            <p class="product-desc">6.7″ AMOLED, 256GB, 5G enabled, 50MP triple camera system.</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$499</span>
+                <span class="price-old">$599</span>
+              </div>
+              <button class="btn btn-primary btn-sm buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Power Bank -->
+        <div class="product-card" data-category="power" data-animate="fade-up">
+          <div class="product-badge new-badge">New</div>
+          <div class="product-image">
+            <i class="ri-battery-charge-fill product-icon" style="color:#10b981"></i>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Power Bank</span>
+            <h3 class="product-name">TurboCharge 30000mAh</h3>
+            <p class="product-desc">30,000mAh fast-charge power bank with dual USB-C ports.</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$59</span>
+                <span class="price-old">$79</span>
+              </div>
+              <button class="btn btn-primary btn-sm buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Earbuds -->
+        <div class="product-card" data-category="audio" data-animate="fade-up">
+          <div class="product-badge hot-badge">Hot</div>
+          <div class="product-image">
+            <i class="ri-headphone-fill product-icon" style="color:#8b5cf6"></i>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Wireless Earbuds</span>
+            <h3 class="product-name">AirSound Pro TWS</h3>
+            <p class="product-desc">Active noise cancellation, 36hr battery, Hi-Fi stereo sound.</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$89</span>
+                <span class="price-old">$119</span>
+              </div>
+              <button class="btn btn-primary btn-sm buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Charger -->
+        <div class="product-card" data-category="charge" data-animate="fade-up">
+          <div class="product-image">
+            <i class="ri-plug-fill product-icon" style="color:#f59e0b"></i>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Charger</span>
+            <h3 class="product-name">GaN 65W Fast Charger</h3>
+            <p class="product-desc">Universal GaN wall charger, charges laptop, phone &amp; tablet.</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$35</span>
+                <span class="price-old">$45</span>
+              </div>
+              <button class="btn btn-primary btn-sm buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Phone Case -->
+        <div class="product-card" data-category="case" data-animate="fade-up">
+          <div class="product-badge">Popular</div>
+          <div class="product-image">
+            <i class="ri-shield-line product-icon" style="color:#ef4444"></i>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Phone Case</span>
+            <h3 class="product-name">ArmorShield Pro Case</h3>
+            <p class="product-desc">Military-grade drop protection, slim-fit design, MagSafe compatible.</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$25</span>
+                <span class="price-old">$35</span>
+              </div>
+              <button class="btn btn-primary btn-sm buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Smart Watch -->
+        <div class="product-card" data-category="phone" data-animate="fade-up">
+          <div class="product-badge new-badge">New</div>
+          <div class="product-image">
+            <i class="ri-watch-fill product-icon" style="color:#06b6d4"></i>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Smart Gadget</span>
+            <h3 class="product-name">SmartFit Pro Watch</h3>
+            <p class="product-desc">Health tracker, GPS, AMOLED always-on display, 7-day battery.</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">$149</span>
+                <span class="price-old">$199</span>
+              </div>
+              <button class="btn btn-primary btn-sm buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /products-grid -->
+    </div>
+  </section>
+
+  <!-- ===== ACCESSORIES SECTION ===== -->
+  <section class="section accessories-section" id="accessories">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Accessories</span>
+        <h2 class="section-title">Shop by <span class="gradient-text">Category</span></h2>
+        <p class="section-subtitle">Everything you need to power up, protect, and enhance your mobile experience.</p>
+      </div>
+
+      <div class="accessories-grid" data-animate="fade-up">
+
+        <div class="acc-card">
+          <div class="acc-icon-wrap" style="background:rgba(59,130,246,0.15)">
+            <i class="ri-smartphone-line" style="color:#3b82f6"></i>
+          </div>
+          <h3>Smartphones</h3>
+          <p>Flagship &amp; budget phones from top brands</p>
+          <span class="acc-count">40+ Models</span>
+        </div>
+
+        <div class="acc-card">
+          <div class="acc-icon-wrap" style="background:rgba(139,92,246,0.15)">
+            <i class="ri-headphone-line" style="color:#8b5cf6"></i>
+          </div>
+          <h3>Earphones</h3>
+          <p>Wired, wireless &amp; noise-cancelling options</p>
+          <span class="acc-count">30+ Models</span>
+        </div>
+
+        <div class="acc-card">
+          <div class="acc-icon-wrap" style="background:rgba(16,185,129,0.15)">
+            <i class="ri-battery-charge-line" style="color:#10b981"></i>
+          </div>
+          <h3>Power Banks</h3>
+          <p>From 10,000mAh to 50,000mAh capacity</p>
+          <span class="acc-count">20+ Models</span>
+        </div>
+
+        <div class="acc-card">
+          <div class="acc-icon-wrap" style="background:rgba(245,158,11,0.15)">
+            <i class="ri-plug-2-line" style="color:#f59e0b"></i>
+          </div>
+          <h3>Chargers</h3>
+          <p>Fast chargers, wireless pads &amp; USB-C hubs</p>
+          <span class="acc-count">25+ Models</span>
+        </div>
+
+        <div class="acc-card">
+          <div class="acc-icon-wrap" style="background:rgba(239,68,68,0.15)">
+            <i class="ri-shield-line" style="color:#ef4444"></i>
+          </div>
+          <h3>Phone Cases</h3>
+          <p>Slim, rugged &amp; designer protective cases</p>
+          <span class="acc-count">80+ Designs</span>
+        </div>
+
+        <div class="acc-card">
+          <div class="acc-icon-wrap" style="background:rgba(6,182,212,0.15)">
+            <i class="ri-tablet-line" style="color:#06b6d4"></i>
+          </div>
+          <h3>Screen Guards</h3>
+          <p>Tempered glass &amp; anti-scratch protectors</p>
+          <span class="acc-count">50+ Variants</span>
+        </div>
+
+        <div class="acc-card">
+          <div class="acc-icon-wrap" style="background:rgba(236,72,153,0.15)">
+            <i class="ri-airplay-line" style="color:#ec4899"></i>
+          </div>
+          <h3>Smart Gadgets</h3>
+          <p>Smartwatches, trackers &amp; wireless speakers</p>
+          <span class="acc-count">35+ Products</span>
+        </div>
+
+        <div class="acc-card">
+          <div class="acc-icon-wrap" style="background:rgba(249,115,22,0.15)">
+            <i class="ri-bluetooth-line" style="color:#f97316"></i>
+          </div>
+          <h3>Connectivity</h3>
+          <p>Bluetooth devices, adapters &amp; USB cables</p>
+          <span class="acc-count">60+ Items</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="section why-section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Why Us</span>
+        <h2 class="section-title">Why Choose <span class="gradient-text">SMI Ventures?</span></h2>
+        <p class="section-subtitle">We deliver more than just products — we deliver trust, quality, and peace of mind.</p>
+      </div>
+
+      <div class="why-grid" data-animate="fade-up">
+
+        <div class="why-card">
+          <div class="why-icon" style="background:linear-gradient(135deg,#3b82f6,#2563eb)">
+            <i class="ri-verified-badge-fill"></i>
+          </div>
+          <h3>Original Devices</h3>
+          <p>Every product we sell is 100% original, manufacturer-sealed, and fully verified for authenticity.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon" style="background:linear-gradient(135deg,#10b981,#059669)">
+            <i class="ri-price-tag-3-fill"></i>
+          </div>
+          <h3>Affordable Prices</h3>
+          <p>We work directly with distributors to bring you the lowest prices without compromising on quality.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed)">
+            <i class="ri-customer-service-2-fill"></i>
+          </div>
+          <h3>Warranty Support</h3>
+          <p>All our products come with official warranty and a dedicated support team to resolve any issues.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon" style="background:linear-gradient(135deg,#f59e0b,#d97706)">
+            <i class="ri-truck-fill"></i>
+          </div>
+          <h3>Fast Delivery</h3>
+          <p>Same day and next day delivery available. Your order reaches you quickly, safely, and securely.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- About Visual -->
+        <div class="about-visual" data-animate="fade-right">
+          <div class="about-card-main">
+            <div class="about-icon-row">
+              <div class="about-icon-box" style="background:rgba(59,130,246,0.15)">
+                <i class="ri-smartphone-fill" style="color:#3b82f6;font-size:2rem"></i>
+              </div>
+              <div class="about-icon-box" style="background:rgba(139,92,246,0.15)">
+                <i class="ri-headphone-fill" style="color:#8b5cf6;font-size:2rem"></i>
+              </div>
+              <div class="about-icon-box" style="background:rgba(16,185,129,0.15)">
+                <i class="ri-battery-charge-fill" style="color:#10b981;font-size:2rem"></i>
+              </div>
+            </div>
+            <h3 class="about-card-title">Your #1 Mobile Gadget Store</h3>
+            <p class="about-card-sub">Trusted since 2018</p>
+            <div class="about-stats-row">
+              <div class="about-stat"><strong>6+ yrs</strong><span>Experience</span></div>
+              <div class="about-stat"><strong>5K+</strong><span>Customers</span></div>
+              <div class="about-stat"><strong>200+</strong><span>Products</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Content -->
+        <div class="about-content" data-animate="fade-left">
+          <span class="section-tag">About Us</span>
+          <h2 class="section-title">Powering Your <span class="gradient-text">Digital Life</span></h2>
+          <p class="about-text">
+            At <strong>SMI Ventures</strong>, we are passionate about connecting people with the latest mobile technology. Since 2018, we have grown from a small gadget outlet into one of the region's most trusted mobile tech destinations, proudly serving over 5,000 satisfied customers.
+          </p>
+          <p class="about-text">
+            We stock an extensive range of original smartphones, wireless earbuds, power banks, fast chargers, screen protectors, smart gadgets, and much more — all sourced directly from certified distributors to guarantee authenticity.
+          </p>
+          <p class="about-text">
+            Whether you're looking for the latest flagship phone or a durable phone case that won't break the bank, our knowledgeable team is always ready to help you find the perfect match.
+          </p>
+          <div class="about-features">
+            <div class="about-feature"><i class="ri-checkbox-circle-fill" style="color:#10b981"></i> Certified Authentic Products</div>
+            <div class="about-feature"><i class="ri-checkbox-circle-fill" style="color:#10b981"></i> Expert In-Store Support</div>
+            <div class="about-feature"><i class="ri-checkbox-circle-fill" style="color:#10b981"></i> Easy Returns &amp; Exchange</div>
+            <div class="about-feature"><i class="ri-checkbox-circle-fill" style="color:#10b981"></i> Nationwide Delivery</div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Contact Us <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Our <span class="gradient-text">Customers Say</span></h2>
+        <p class="section-subtitle">Real feedback from real customers across our stores.</p>
+      </div>
+
+      <div class="testimonial-slider-wrapper" data-animate="fade-up">
+        <div class="testimonial-track" id="testimonialTrack">
+
+          <div class="testimonial-card active">
+            <div class="stars">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"I bought the ProMax X15 from SMI Ventures and it's been amazing! Great price, fast delivery, and the phone came fully sealed. Highly recommend to anyone looking for quality phones!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#3b82f6,#8b5cf6)">
+                <i class="ri-user-fill"></i>
+              </div>
+              <div class="author-info">
+                <strong>Amara Johnson</strong>
+                <span>Verified Buyer — Lagos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"The AirSound Pro earbuds I ordered are absolutely top notch. Customer service was super helpful when I had a question about compatibility. Will definitely order again!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#10b981,#06b6d4)">
+                <i class="ri-user-fill"></i>
+              </div>
+              <div class="author-info">
+                <strong>Kwame Mensah</strong>
+                <span>Verified Buyer — Accra</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i><i class="ri-star-half-fill"></i>
+            </div>
+            <p class="testimonial-text">"Ordered a GaN 65W charger and a power bank together. Both arrived within 24 hours in perfect condition. The prices here are genuinely lower than anywhere else I found online."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">
+                <i class="ri-user-fill"></i>
+              </div>
+              <div class="author-info">
+                <strong>Fatima Al-Rashid</strong>
+                <span>Verified Buyer — Abuja</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /testimonial-track -->
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+          <button class="slider-btn prev-btn" id="prevBtn" aria-label="Previous testimonial">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+          <div class="slider-dots" id="sliderDots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <button class="slider-btn next-btn" id="nextBtn" aria-label="Next testimonial">
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Have a question or need help choosing a product? Reach out — we're here to help!</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info" data-animate="fade-right">
+          <div class="contact-info-card">
+            <h3>Contact Details</h3>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" style="background:rgba(59,130,246,0.15)">
+                <i class="ri-phone-fill" style="color:#3b82f6"></i>
+              </div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <a href="tel:+2348012345678" class="contact-value">+234 801 234 5678</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" style="background:rgba(16,185,129,0.15)">
+                <i class="ri-mail-fill" style="color:#10b981"></i>
+              </div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:hello@smiventures.com" class="contact-value">hello@smiventures.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" style="background:rgba(139,92,246,0.15)">
+                <i class="ri-map-pin-fill" style="color:#8b5cf6"></i>
+              </div>
+              <div>
+                <span class="contact-label">Address</span>
+                <span class="contact-value">12 Tech Boulevard, Victoria Island, Lagos, Nigeria</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" style="background:rgba(245,158,11,0.15)">
+                <i class="ri-time-fill" style="color:#f59e0b"></i>
+              </div>
+              <div>
+                <span class="contact-label">Business Hours</span>
+                <span class="contact-value">Mon – Sat: 8:00 AM – 8:00 PM</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap" data-animate="fade-left">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <div class="input-wrapper">
+                <i class="ri-user-line input-icon"></i>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <div class="input-wrapper">
+                <i class="ri-mail-line input-icon"></i>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (Optional)</label>
+              <div class="input-wrapper">
+                <i class="ri-phone-line input-icon"></i>
+                <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <div class="input-wrapper textarea-wrap">
+                <i class="ri-message-3-line input-icon textarea-icon"></i>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us how we can help you..." required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <i class="ri-send-plane-fill"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="ri-checkbox-circle-fill"></i>
+              Message sent! We'll get back to you within 24 hours.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+
+          <!-- Brand Column -->
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo footer-logo">
+              <i class="ri-smartphone-line logo-icon"></i>
+              <span>SMI<span class="logo-accent"> Ventures</span></span>
+            </a>
+            <p class="footer-desc">Your trusted destination for original smartphones and premium mobile accessories. Quality guaranteed, prices unbeatable.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+              <a href="#" class="social-link" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+              <a href="#" class="social-link" aria-label="Twitter/X"><i class="ri-twitter-x-fill"></i></a>
+              <a href="#" class="social-link" aria-label="WhatsApp"><i class="ri-whatsapp-fill"></i></a>
+              <a href="#" class="social-link" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home"><i class="ri-arrow-right-s-line"></i> Home</a></li>
+              <li><a href="#products"><i class="ri-arrow-right-s-line"></i> Products</a></li>
+              <li><a href="#accessories"><i class="ri-arrow-right-s-line"></i> Accessories</a></li>
+              <li><a href="#about"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
+              <li><a href="#contact"><i class="ri-arrow-right-s-line"></i> Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Products -->
+          <div class="footer-col">
+            <h4>Products</h4>
+            <ul class="footer-links">
+              <li><a href="#products"><i class="ri-arrow-right-s-line"></i> Smartphones</a></li>
+              <li><a href="#products"><i class="ri-arrow-right-s-line"></i> Power Banks</a></li>
+              <li><a href="#products"><i class="ri-arrow-right-s-line"></i> Earphones</a></li>
+              <li><a href="#products"><i class="ri-arrow-right-s-line"></i> Chargers</a></li>
+              <li><a href="#products"><i class="ri-arrow-right-s-line"></i> Smart Gadgets</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul class="footer-contact-list">
+              <li><i class="ri-phone-fill" style="color:#3b82f6"></i><a href="tel:+2348012345678">+234 801 234 5678</a></li>
+              <li><i class="ri-mail-fill" style="color:#10b981"></i><a href="mailto:hello@smiventures.com">hello@smiventures.com</a></li>
+              <li><i class="ri-map-pin-fill" style="color:#8b5cf6"></i><span>12 Tech Blvd, Victoria Island, Lagos</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">&copy; <span id="year"></span> SMI Ventures. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
